@@ -5,13 +5,13 @@ use demonstrate::demonstrate;
 demonstrate! {
     describe "In a new context" {
         use app_basics::*;
-        use all_asserts::*;
+        use hamcrest2::prelude::*;
     
         it "works" {
-            assert_eq!(4, sum(2, 2));
+            assert_that!(sum(2, 2), eq(4));
         }
         it "fails" {
-            assert_gt!(5, sum(2, 2));
+            assert_that!(sum(2, 2), lt(5));
         }
     }
 }

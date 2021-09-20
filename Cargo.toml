@@ -8,5 +8,5 @@ edition = "2018"
 [dependencies]
 
 [dev-dependencies]
-all_asserts = "2.3.0"
 demonstrate = "0.4.5"
+hamcrest2 = "0.3.0"
