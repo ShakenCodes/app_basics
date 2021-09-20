@@ -4,9 +4,14 @@ version = "0.1.0"
 edition = "2018"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[[test]]
+name = "cucumber"
+harness = false
 
 [dependencies]
 
 [dev-dependencies]
 demonstrate = "0.4.5"
 hamcrest2 = "0.3.0"
+cucumber_rust = "0.9"
+tokio = { version = "1.9.0", features = ["rt-multi-thread", "macros", "time"] }
