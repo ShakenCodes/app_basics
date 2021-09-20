@@ -10,8 +10,9 @@ demonstrate! {
         it "works" {
             assert_that!(sum(2, 2), eq(4));
         }
+        #[should_panic]
         it "fails" {
-            assert_that!(sum(2, 2), lt(5));
+            assert_that!(sum(2, 2), gt(5));
         }
     }
 }
